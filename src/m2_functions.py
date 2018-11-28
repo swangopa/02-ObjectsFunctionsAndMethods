@@ -102,7 +102,7 @@ def moving(color,thickness):
     sally.pen=rg.Pen(color, 5)
     sally.backward(100)
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
