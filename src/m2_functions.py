@@ -87,8 +87,18 @@ def triangle2():
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-
-
+import rosegraphics as rg
+def moving(color,thickness):
+    window = rg.TurtleWindow()
+    window.delay(20)
+    tom=rg.SimpleTurtle()
+    tom = rg.SimpleTurtle('turtle')
+    tom.pen = rg.Pen('green',thickness)
+    tom.forward(100)
+    sally=rg.SimpleTurtle()
+    sally=rg.SimpleTurtle('turtle')
+    sally.pen=rg.Pen('color', 5)
+    sally.backward(100)
 ###############################################################################
 # TODO: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
