@@ -1963,6 +1963,9 @@ class SimpleTurtle(object):
         self._turtle.fillcolor(self.paint_bucket.color)
         self._turtle.speed(self.speed)
 
+    def circle(self, param):
+        pass
+
 
 class Pen(object):
     """

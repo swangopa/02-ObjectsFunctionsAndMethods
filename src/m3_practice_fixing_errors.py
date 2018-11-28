@@ -2,11 +2,11 @@
 This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Paige Swango.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
@@ -36,16 +36,31 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions in this module to demo them. """
     print_math()
-    tutle_fn()
+    turtle_fun()
+    sin=pi
 
 
-def print_math:
+def cos(pi):
+    pass
+
+
+def pi(args):
+    pass
+
+
+def sin(pi):
+    pass
+    def circle(self, param):
+        pass
+
+
+def print_math():
     """ Prints some calculated values. """
     x = cos(pi)
     print(x)
 
     y = sin(pi)
-    print(The sine of PI is, y)
+    print('The sin of Pi is, y')
 
 
 def turtle_fun():
@@ -57,15 +72,15 @@ def turtle_fun():
     window = rg.TurtleWindow()
 
     alan = rg.SimpleTurtle()
-alan.pen = rg.Pen('blue', 30)
+    alan.pen = rg.Pen('blue', 30)
     alan.paint_bucket = rg.PaintBucket('yellow')
 
-    alan.back(3 * (47 + 16)
-    al.begin_fill()
+    alan.backward(3 * (47 + 16))
+    alan.begin_fill()
     alan.circle(25)
     alan.end_fill()
 
-    forward(200)
+    alan.forward(200)
 
     window.close_on_mouse_click()
 
