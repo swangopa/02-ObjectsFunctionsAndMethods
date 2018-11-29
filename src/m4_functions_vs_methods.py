@@ -8,7 +8,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -98,7 +98,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
         my_turtle.left(twist)
 
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -136,10 +136,16 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
-
+    tom = rg.SimpleTurtle()
+    tom.pen.color='brown'
+    tom.pen.thickness=5
+    tom.forward(150)
+    tom.left(90)
+    tom.forward(50)
+    tom.backward(100)
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
@@ -152,7 +158,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -160,6 +166,24 @@ def try_functions():
     #    If you think it needs more, ** ASK FOR HELP. **
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
+    sally = rg.SimpleTurtle()
+    sally.pen_up()
+    sally.go_to(rg.Point(200,100))
+    sally.pen_down()
+    sally.go_to(rg.Point(300,30))
+
+    sally = rg.SimpleTurtle()
+    sally.pen_up()
+    sally.go_to(rg.Point(100, 200))
+    sally.pen_down()
+    sally.go_to(rg.Point(0, 0))
+
+    sally = rg.SimpleTurtle()
+    sally.pen_up()
+    sally.go_to(rg.Point(-50, 50))
+    sally.pen_down()
+    sally.go_to(rg.Point(100, 100))
+
 
 
 ###############################################################################
@@ -198,13 +222,31 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
+
+    dan = rg.SimpleTurtle()
+    dan.pen.color='blue'
+    dan.pen.thickness=5
+    dan.backward(150)
+    dan.speed=1
+    draw_many_squares(dan,2,100,30)
+    dan.speed=5
+    dan.pen.color='red'
+    draw_many_squares(dan,10,50,15)
+    dan.speed=100
+    dan.pen.thickness=35
+    draw_many_squares(dan,8,300,60)
+    dan.pen.color='black'
+    dan.pen.thickness=3
+    dan.backward(200)
+    dan.draw_circle(30)
+    dan.draw_square(50)
 
 
 # -----------------------------------------------------------------------------
